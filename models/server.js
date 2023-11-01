@@ -38,7 +38,7 @@ class Server {
       //Rutas de mi aplicacion
       this.routes();
 
-     /* this.listen(); */
+     this.listen();
     }
 
 
@@ -79,7 +79,7 @@ class Server {
 
     listen(){
         this.app.listen(this.port, () => {
-          console.log(`Example app listening at http://localhost:${this.port}`);
+          console.log('Servidor funcionando correctamente');
         });
     }
 
