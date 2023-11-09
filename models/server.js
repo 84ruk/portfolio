@@ -51,9 +51,8 @@ class Server {
         this.app.use(express.json());
         this.app.use(express.urlencoded({ extended: true }));
         this.app.use(cors({
-          origin: `${process.env.FRONTEND_URL}`,
-          methods: ['GET', 'POST', 'PUT', 'DELETE'],
-          credentials: true,
+          origin: `${process.env.FRONTEND_URL}`, // Reemplaza con la URL de tu frontend
+          credentials: true, // Permite enviar y recibir cookies
         }));
         
         
